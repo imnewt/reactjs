@@ -1,0 +1,19 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="root"></div>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>  
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            let Title = <div className='title'>Something cool below</div>;
+            let Image = <img src='https://media1.tenor.com/images/4c6a81e33b844c395f60caaf1d1ab74c/tenor.gif?itemid=3829458'/>;
+            let App = React.createElement('div', null, Title, Image);
+            let root = document.getElementById('root');
+            ReactDOM.render(App, root);
+        </script>
+    </body>
+</html>
